@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  .listOfPosts{
+    border: 1px solid #000000;
+    width: 200px;
+    .title {
+      background-color: aqua;
+    }
+    .foot {
+      background-color: aquamarine;
+    }
+  }
+  .postPage {
+    .leftSide {
+      width: 50%;
+      .post {
+        border: 1px solid #000000;
+        .title{
+          background-color: aquamarine;
+        }
+        .footer {
+          background-color: bisque;
+        }
+      }
+    }
+    .rightSide {
+      width: 50%;
+    }
+  }
+}
+
+
+span {
+  color: red;
+}
+
