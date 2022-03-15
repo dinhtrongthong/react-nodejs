@@ -30,13 +30,13 @@ function CreatePost() {
             <Form>
                 <label>Title: </label><br/>
                 <ErrorMessage name="title" component="span"/><br/>
-                <Field autoComplete="off" id="inputCreatePost" name="title" placeholder="..."/> <br/>
+                <Field autoComplete="off" id="titleInput" name="title" placeholder="..."/> <br/>
                 <label>Post: </label><br/>
                 <ErrorMessage name="postText" component="span"/><br/>
-                <Field autoComplete="off" id="inputCreatePost" name="postText" placeholder="..."/><br/>
+                <Field autoComplete="off" id="postTextInput" name="postText" placeholder="..."/><br/>
                 <label>Username: </label><br/>
                 <ErrorMessage name="username" component="span"/><br/>
-                <Field autoComplete="off" id="inputCreatePost" name="username" placeholder="..."/><br/>
+                <Field autoComplete="off" id="usernameInput" name="username" placeholder="..."/><br/>
                 <button type="submit">Create post</button>
             </Form>
         </Formik>

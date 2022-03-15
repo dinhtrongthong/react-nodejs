@@ -25,10 +25,10 @@ function Registration() {
         <Form className='formContainer'>
           <label>Username: </label>
           <ErrorMessage name="username" component="span" /><br />
-          <Field autoComplete="off" id="inputCreatePost" name="username" placeholder="..." /><br />
+          <Field autoComplete="off" id="usernameInput" name="username" placeholder="..." /><br />
           <label>Password: </label><br />
           <ErrorMessage name="username" component="span" /><br />
-          <Field type="password" autoComplete="off" id="inputCreatePost" name="password" placeholder="..." /><br />
+          <Field type="password" autoComplete="off" id="passwordInput" name="password" placeholder="..." /><br />
           <button type="submit">Register</button>
         </Form>
       </Formik>

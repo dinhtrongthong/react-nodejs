@@ -4,7 +4,7 @@ const { Comments } = require('../models');
 const { validateToken } = require('../middlewares/AuthMiddleware');
 
 
-router.get("/:postId", async (req,res) => {
+router.get("/:postId", async (req, res) => {
     const postId = req.params.postId;
     const comments = await Comments.findAll({
         where: {
@@ -20,6 +20,17 @@ router.post("/", validateToken, async (req, res) => {
     comment.username = username;
     await Comments.create(comment);
     res.json(comment);
+})
+
+router.delete("/:commentId", validateToken, async (req, res) => {
+    const commentId = req.params.commentId;
+    await Comments.detroy({
+        where: {
+            id: commentId
+        }
+    });
+
+    res.json("Deleted successfully");
 })
 
 
