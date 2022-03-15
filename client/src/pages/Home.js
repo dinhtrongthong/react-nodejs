@@ -8,8 +8,8 @@ function Home() {
     let navigate  = useNavigate();
 
     useEffect(() => {
-        axios.get("http://localhost:3001/posts").then((reponse) => {
-            setListOfPosts(reponse.data);
+        axios.get("http://localhost:3001/posts").then((response) => {
+            setListOfPosts(response.data);
         });
     }, [])
 
