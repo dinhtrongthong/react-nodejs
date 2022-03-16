@@ -33,7 +33,7 @@ function App() {
         });
       }
     })
-  });
+  },[]);
 
   const logout = () => {
     localStorage.removeItem('accessToken');

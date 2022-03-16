@@ -1,9 +1,9 @@
 const express = require('express');
-const { Posts } = require('../models');
+const { Posts, Likes } = require('../models');
 const router = express.Router()
 
 router.get("/", async (req,res) => {
-     const listOfPosts = await Posts.findAll();
+     const listOfPosts = await Posts.findAll({ include: [Likes] });
      res.json(listOfPosts);
 })
 
@@ -19,7 +19,5 @@ router.post("/", async (req, res) => {
     res.json(post);
 })
 
-
-// router.post()
 module.exports = router
 

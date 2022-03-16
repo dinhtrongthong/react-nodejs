@@ -25,11 +25,15 @@
   .listOfPosts{
     border: 1px solid #000000;
     width: 200px;
+    margin-bottom: 15px;
     .title {
-      background-color: aqua;
+      background-color: #468499;
+    }
+    .body {
+      height: 100px;
     }
     .foot {
-      background-color: aquamarine;
+      background-color: #468499;
     }
   }
   .postPage {
@@ -37,11 +41,14 @@
       width: 50%;
       .post {
         border: 1px solid #000000;
-        .title{
-          background-color: aquamarine;
+        .title {
+          background-color: #468499;
+        }
+        .body {
+          height: 200px;
         }
         .footer {
-          background-color: bisque;
+          background-color: #468499;
         }
       }
     }
